@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+   
+    <script>
+    let toggle = false;
+    function changeImage(button) {
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        // Get the image element inside the button
+        const img = button.querySelector('img');
+        
+        // Define the two image paths
+        const originalImage = '../images/Property 1=Variant2.png';
+        const clickedImage = '../images/Property 1=Default.png ' 
+        
+        // Change to clicked image
+        img.src = clickedImage; 
+        
+        // Wait for a while and then change back to the original image
+        sleep(100).then(() => {
+            img.src = originalImage;
+        });
+    }
+    </script>
+
+
+
+
+</head>
+<body>
+
+    <div class="flex flex-row sm:flex-row justify-center items-center w-full" id="/">
+        <img class="w-20 h-20 sm:w-28 sm:h-28 sm:ml-8 lg:ml-32" src="../images/Logo Etic.png" alt="Logo Etic"/>
+        
+        <h1 class="text-xl sm:text-3xl md:text-4xl font-athletic p-2 sm:p-4 sm:pt-6 md:pt-2 font-bold tracking-tight text-center sm:text-left ">
+            <span class="text-red-500">LEGO</span> LAB: 
+            <span class="text-yellow-300">C</span>ODE YOUR 
+            <span class="text-green-600">C</span>HARA<span class="text-blue-700">C</span>TER
+            <span class="text-white">!</span>
+        </h1>
+        
+        <img class="w-32 h-16 sm:w-48 sm:h-24 sm:mt-0 mt-2 " src="../images/Lego Logo 1.png" alt="Lego Logo"/>
+    </div>
+
+    <div class="w-full flex flex-col justify-center align-middle items-center "> 
+        <h4 class="font-athletic font-normal text-xs sm:text-xl md:text-lg lg:text-xl">
+            Your objective is to customize your character using HTML/CSS
+        </h4>
+        <h4 class="font-athletic font-normal text-xs sm:text-xl md:text-lg lg:text-xl">
+            If you don’t know what HTML/CSS <a href="./introHTML-CSS.html" class="underline text-blue-600 hover:text-blue-800">is this is for you</a>
+        </h4>
+        
+        
+    </div> 
+     
+    <section class="w-full h-full flex flex-col justify-center items-center mt-14">
+        <div class=" space-y-4 sm:space-y-6">
+            <img src ='../images/Group 17.png' class='w-[100px] h-[100px] sm:w-[153.47px] sm:h-[157px]' />
+            <img src ='../images/Group 20.png' class='w-[200px] h-[150px] sm:w-[317.67px] sm:h-[202.76px]' />
+            <img src = '../images/Group 18.png' class='w-[120px] h-[150px] sm:w-[180px] sm:h-[202px]' />       
+        </div>   
+        <div class="m-24 flex flex-col ">
+            <input type='text' class='w-[240px] h-[120px] 
+                                    bg-gray-800 border border-gray-700 rounded-md p-4 
+                                    resize-none focus:outline-none 
+                                    focus:ring focus:ring-blue-500 placeholder-gray-500 
+                                    font-courier 
+                                    text-green-500 
+                                    '>
+            </input>
+            <button  class ='mx-1 my-4 focus:outline-none' onclick='changeImage(this)'>
+                <img src = '../images/Property 1=Variant2.png' class=''/>
+            </button>
+              
+        </div>     
+    </section>
+    
+    
+    
+
+        
+
+
+ 
+
+</body>
+</html>
