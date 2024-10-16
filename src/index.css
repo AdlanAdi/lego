@@ -1,0 +1,67 @@
+body{
+    background-color: whitesmoke;
+    background-image: url(./image/36efd3e7eece7aa6a0e883d548400918.png);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.lego {
+    position: absolute; /* Ensure absolute positioning */
+    width: 189.1px;
+    height: 101.06px;
+    left: 1143.13px;
+    top: 10px;
+    transform: rotate(-6.02deg); /* Correct rotate property */
+}
+
+.lego1 {
+    position: absolute; /* Ensure absolute positioning */
+    width: 134px;
+    height: 148.72px;
+    top: 393px;
+    left: 1220px;
+}
+
+.lego2 {
+    position: absolute; /* Ensure absolute positioning */
+    width: 118px;
+    height: 141.14px;
+    top: 213px;
+    left: 179px;
+ 
+}
+.text1{
+    position: absolute;
+    top: 70px;
+}
+.text2{
+    position: absolute;
+    top: 300px;
+}
+.person{    
+    position: absolute;
+    top: 500px;
+
+}
+.try{
+    position: absolute;
+    top: 1100px;
+}
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    cursor: pointer;
+}

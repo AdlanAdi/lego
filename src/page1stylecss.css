@@ -1,0 +1,34 @@
+*{ 
+ padding: 0;
+ margin: 0;
+ scroll-behavior: smooth;   
+ box-sizing: border-box;
+}
+ body{ 
+    background: url(../images/background.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed ;
+ }
+
+
+ section {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   height: 100vh; /* Ensures the section takes up the full view height */
+}
+
+.content {
+   flex-grow: 1;
+}
+
+a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%; /* Ensure the anchor takes full width */
+}
